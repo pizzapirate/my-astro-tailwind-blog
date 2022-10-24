@@ -1,0 +1,36 @@
+---
+import "@fontsource/m-plus-rounded-1c";
+export interface Props {
+	title: string;
+    subtitle: string;
+}
+
+const { title, subtitle } = Astro.props;
+---
+<div class="my-5 grid grid-cols-3 grid-flow-col">
+
+    <div class="col-span-2">
+        <div class="mb-5">
+            <span class="text-4xl font-bold">
+                {title}
+            </span>
+        </div>
+        <div>
+            <span class="text-xl">
+                {subtitle}
+            </span>
+        </div>
+    </div>
+
+    <div class="col-span-1 flex justify-end">
+        <img src="./me.png" alt="a picture of me." class="h-48 aspect-auto">
+    </div>
+
+</div>
+
+<style>
+/* Custom font installed via https://docs.astro.build/en/guides/fonts/ and https://fontsource.org/fonts/m-plus-rounded-1c */
+span{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+} 
+</style>
