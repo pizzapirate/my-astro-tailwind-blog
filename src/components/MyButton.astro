@@ -1,0 +1,21 @@
+---
+import "@fontsource/m-plus-rounded-1c";
+export interface Props {
+	text: string;
+    link?: URL;
+}
+
+const { text, link} = Astro.props;
+---
+<button class="
+bg-teal-600
+text-stone-800
+font-bold
+hover:underline
+decoration-cyan-800
+decoration-4 
+active:ring-2  
+ring-cyan-800 
+py-1 px-4 rounded">
+    {text}
+</button>

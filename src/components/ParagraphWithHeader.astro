@@ -1,0 +1,20 @@
+---
+import "@fontsource/m-plus-rounded-1c";
+export interface Props {
+	title: string;
+}
+
+const { title} = Astro.props;
+---
+<div class="my-14">
+    <h1 class="text-3xl
+    underline 
+    decoration-cyan-800
+    decoration-4
+    mb-5 
+    " 
+    style="font-family: 'M PLUS Rounded 1c', sans-serif;">
+        {title}
+    </h1>
+    <slot></slot>
+</div>

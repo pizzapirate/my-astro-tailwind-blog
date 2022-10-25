@@ -3,15 +3,56 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
+import ParagraphWithHeader from '../components/ParagraphWithHeader.astro';
+import MyButton from '../components/MyButton.astro';
 import "@fontsource/m-plus-rounded-1c";
 ---
 
 <Layout title="Miles Vellozzo">
-	<Navbar></Navbar>
-	<Hero title="Miles Vellozzo" subtitle="Fullstack developer, digital craftsman, maker of things. "></Hero>
-	<div class="">
-		<h1>Welcome to Astro.</h1>
-	</div>	
+	
+	<div class="md:w-[740px] 
+				sm:w-[620px] 
+				mx-auto
+				sticky top-0">
+		<Navbar></Navbar>
+	</div>
+	<div class="md:w-[720px] 
+				sm:w-[600px] 
+				px-1 mx-auto">
+		<Hero title="Miles Vellozzo" subtitle="Fullstack developer, digital craftsman, maker of things. "></Hero>
+
+		<ParagraphWithHeader title="Bio">
+			<p class="mb-3">Hello and welcome to my personal site! I am Miles, a fullstack developer that likes making simple, clean and responsive UX designs, 
+				functional apps and programs, and making things that aren't just digital.</p>
+			<p>The languages/frameworks that I am most interested in and use the most for my projects are C#, ASP.NET, Python, 
+				React.js, React Native, Astro (used to make this site!), Tailwind, and, JavaScript.</p>
+			<div class="my-4 ">
+				<MyButton text="Projects"></MyButton>
+			</div>
+		</ParagraphWithHeader>
+
+
+		<ParagraphWithHeader title="Education">
+			<p>This is where all of my education information will go...</p>
+		</ParagraphWithHeader>
+
+		<ParagraphWithHeader title="I ♥">
+			<ul>
+				<li>Coding</li>
+				<li>Astro</li>
+				<li>Add other stuff here...</li>
+			</ul>
+		</ParagraphWithHeader>
+
+		<ParagraphWithHeader title="Links">
+			<ul>
+				<li>GitHub</li>
+				<li>LinkedIn</li>
+			</ul>
+		</ParagraphWithHeader>
+	</div>
+
+
 </Layout>
 
 <style>
