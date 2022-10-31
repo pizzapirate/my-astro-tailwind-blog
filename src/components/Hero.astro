@@ -1,5 +1,6 @@
 ---
-import '@fontsource/eb-garamond';
+import "@fontsource/vt323"
+import "@fontsource/m-plus-1-code"
 /* Custom font installed via https://docs.astro.build/en/guides/fonts/ and https://fontsource.org/fonts/eb-garamond */
 
 export interface Props {
@@ -12,13 +13,14 @@ const { title, subtitle } = Astro.props;
 <div class="my-5">
 
     <div class="mb-5">
-        <span class="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-teal-700
-        " style="font-family: 'EB Garamond', serif; font-weight: 800;">
+        <span class="text-6xl font-bold bg-clip-text text-transparent 
+        bg-gradient-to-r from-teal-500 to-cyan-500
+        " style="font-family: 'VT323', monospace; font-weight: 800;">
             {title}
         </span>
     </div>
     <div>
-        <span class="text-2xl" >
+        <span class="text-2xl" style="font-family: 'M PLUS 1 Code', sans-serif;">
             {subtitle}
         </span>
     </div>

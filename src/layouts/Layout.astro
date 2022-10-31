@@ -16,9 +16,11 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xm1" href="/PizzaPiratePixel.svg">
 		<title>{title}</title>
 	</head>
-	<body class="bg-[#202023] text-white" >
-		<slot />
+	<body >
+		<div class="bg-[#0A192F] text-[#CCD6F6]">
+			<slot />
+		</div>
+		<!-- bg-[#202023] -->
 	</body>
 
 </html>
-
