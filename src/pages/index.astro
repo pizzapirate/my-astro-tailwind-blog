@@ -3,12 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
 import ParagraphWithHeader from '../components/ParagraphWithHeader.astro';
-import MyButton from '../components/MyButton.astro';
 import HeroImage from '../components/HeroImage.astro';
-import "@fontsource/m-plus-rounded-1c";
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Miles Vellozzo">
+<Layout title="Miles Vellozzo's Personal Site">
 	
 	<div class="md:w-[740px] 
 				sm:w-[620px] 
@@ -29,19 +28,14 @@ import "@fontsource/m-plus-rounded-1c";
 				functional apps and programs, and making things that aren't just digital.</p>
 			<p>The languages/frameworks that I am most interested in and use the most for my projects are C#, ASP.NET, Python, 
 				React.js, React Native, Astro (used to make this site!), Tailwind, and, JavaScript.</p>
-			<div class="my-4 ">
-				<MyButton text="Projects"></MyButton>
-			</div>
 		</ParagraphWithHeader>
 
-		<ParagraphWithHeader title="I ♥">
+		<ParagraphWithHeader title="I like">
 			<ul>
 				<li>Coding</li>
-				<li>Astro</li>
 				<li>Cats</li>
 				<li>Nature / the Outdoors</li>
 				<li>Writing</li>
-				<li>Add other stuff here...</li>
 
 			</ul>
 		</ParagraphWithHeader>
@@ -53,7 +47,7 @@ import "@fontsource/m-plus-rounded-1c";
 			</ul>
 		</ParagraphWithHeader>
 
-		<img src="/PizzaPiratePixel.svg">
+		<Footer></Footer>
 	</div>
 
 
