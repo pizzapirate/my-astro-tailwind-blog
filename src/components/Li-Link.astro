@@ -6,8 +6,10 @@ export interface Props {
 const { link} = Astro.props;
 ---
 
-<li>
-    <a href={link}  class="underline decoration-2 hover:font-bold">
-        <slot></slot>
+<li class="my-2 transition ease-in-out delay-150  hover:scale-110 duration-150 hover:translate-x-10">
+    <a href={link}  class="hover:underline decoration-[3px]">
+        <div class="flex">
+            <slot></slot>
+        </div>
     </a>
 </li>

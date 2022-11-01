@@ -1,0 +1,31 @@
+---
+const { values = [] } = Astro.props;
+// https://www.npmjs.com/package/typewriter-effect
+---
+
+<type-writer values={values}></type-writer>
+
+
+<script>
+import Typewriter from 'typewriter-effect/dist/core';
+
+customElements.define("type-writer", class extends HTMLElement {
+  connectedCallback() {
+
+    var typewriter = new Typewriter(this, {
+    loop: true
+});
+
+typewriter.typeString('Hello, World!')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('Thanks for visiting my site!')
+    .pauseFor(2500)
+    .deleteAll()
+    .typeString('I hope you enjoy your stay!')
+    .pauseFor(2500)
+    .deleteAll()
+    .start();
+  }
+})
+</script>

@@ -1,40 +1,30 @@
 ---
 import PizzaPiratePixelIcon from '../components/PizzaPiratePixelIcon.astro';
+import '@fontsource/m-plus-rounded-1c'
 ---
-<div class="flex justify-between  py-4 backdrop-blur-sm md:px-[13px] sm:px-[12px] p-1">
+<div class="flex justify-between py-4 md:px-[13px] sm:px-[12px] p-1">
 
-    <div class="flex">
+    <div class="flex transition ease-in-out delay-150  hover:scale-125 duration-150">
         <PizzaPiratePixelIcon></PizzaPiratePixelIcon>
-        <!-- <span class="my-auto font-bold text-l ml-4">Pizza Pirate</span> -->
     </div>
 
-
-
-    <!-- <ul class="flex">
+    <ul class="flex">
         <li class="">
-            <button class="hover:bg-gradient-to-r from-[#0d9488cc] to-[#0891b2cc] 
-            hover:underline
-            decoration-cyan-800
-            decoration-4 
-            active:ring-2  
-            ring-cyan-800 
-            font-bold py-1 px-4 rounded
-            transition ease-in-out delay-150  hover:scale-110 duration-150">
-                Projects
+            <button class=" 
+            underline
+            decoration-teal-500
+            decoration-[3px]
+            hover:ring-2  
+            ring-teal-500 
+            py-1 px-4 rounded
+            transition ease-in-out delay-150  hover:scale-110 duration-150"
+            style="font-family: 'M PLUS 1 Code', sans-serif; font-weight: 200;" 
+            >   
+                <a href='https://github.com/pizzapirate/my-astro-tailwind-blog' target="_blank">
+                    Source
+                </a>
             </button>
         </li>
-        <li class="">
-            <button class="hover:bg-gradient-to-r from-[#0d9488cc] to-[#0891b2cc] 
-            hover:underline
-            decoration-cyan-800
-            decoration-4 
-            active:ring-2  
-            ring-cyan-800 
-            font-bold py-1 px-4 rounded
-            transition ease-in-out delay-150  hover:scale-110 duration-150">
-                Blog
-            </button>
-        </li>
-    </ul> -->
+    </ul>
     
 </div>
