@@ -30,18 +30,21 @@ import TypewriterEffectWebcomponent from './Typewriter-Effect-WebComponent.astro
 
 </div>
 
-<style>
+<!-- <style>
      .hidetilt{
         transform: inherit !important;
         }
-</style>
+</style> -->
 
 <script src="vanilla-tilt"></script>
 <script>
     let tiltBox = document.getElementById('myTiltBox');
     if(screen.width < 1000){
     	// @ts-ignore <-- ignoring possible null reference
-        tiltBox.classList.add('hidetilt')
+        // tiltBox.classList.add('hidetilt')
+        // @ts-ignore <-- ignoring possible null reference
+        tiltBox.toggleAttribute("data-tilt")
+
         console.log('Tilt box disabled because screen is too small.')
     }
     else{
